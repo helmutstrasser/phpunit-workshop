@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7315fd7b284f56d5861afec7a26a568",
+    "content-hash": "3eb0e4b7ce75351f690f847596f82645",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2212,6 +2212,42 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "supseven/theme",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/theme",
+                "reference": "72084fa8eb19ac331c460f5a8a4cbfefe85e3c55"
+            },
+            "require": {
+                "typo3/cms-core": "^12.4",
+                "typo3/cms-fluid-styled-content": "^12.4",
+                "typo3/cms-rte-ckeditor": "^12.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "theme"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Supseven\\Theme\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Sitepackage for PHPUnit workshop TYPO3Camp Vienna 2024",
+            "homepage": "https://www.supseven.at/",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -6891,10 +6927,12 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^8.3"
+    },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "8.1.1"
+        "php": "8.3.8"
     },
     "plugin-api-version": "2.6.0"
 }
