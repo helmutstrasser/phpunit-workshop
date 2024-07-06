@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'Supseven\\Theme\\' => 'Classes',
+            'Workshop\\Theme\\' => 'Classes',
         ],
     ],
     'state' => 'stable',
@@ -27,6 +27,6 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 1,
     'author' => 'Helmut Strasser',
     'author_email' => 'h.strasser@supseven.at',
-    'author_company' => 'supseven',
+    'author_company' => 'supseven e.U.',
     'version' => '1.0.0',
 ];

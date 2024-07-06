@@ -1,8 +1,8 @@
 {
-    "name": "supseven/theme",
+    "name": "workshop/theme",
     "type": "typo3-cms-extension",
     "description": "Sitepackage for PHPUnit workshop TYPO3Camp Vienna 2024",
-    "homepage": "https://www.supseven.at/",
+    "homepage": "https://www.typo3camp.at/",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "version": "1.0.0",
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Supseven\\Theme\\": "Classes/"
+            "Workshop\\Theme\\": "Classes/"
         }
     },
     "extra": {

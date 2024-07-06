@@ -21,7 +21,7 @@
     ],
 	"require": {
 		"php": "^8.3",
-		"supseven/theme": "^1.0",
+		"workshop/theme": "^1.0",
 		"typo3/cms-backend": "^12.4.0",
 		"typo3/cms-belog": "^12.4.0",
 		"typo3/cms-beuser": "^12.4.0",

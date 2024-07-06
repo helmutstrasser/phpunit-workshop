@@ -1,11 +1,11 @@
 {
-  "name": "supseven-theme",
+  "name": "workshop-theme",
   "description": "Sitepackage",
   "repository": {
     "type": "git",
     "url": "https://github.com/helmutstrasser/phpunit-workshop"
   },
-  "homepage": "https://www.supseven.at/",
+  "homepage": "https://www.typo3camp.at/",
   "author": "Helmut Strasser",
   "version": "1.0.0",
   "license": "GPL-2.0-or-later",
