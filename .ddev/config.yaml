@@ -1,4 +1,5 @@
 name: phpunit-workshop
+ddev_version_constraint: ">=v1.23.0"
 type: typo3
 docroot: public
 php_version: "8.3"
