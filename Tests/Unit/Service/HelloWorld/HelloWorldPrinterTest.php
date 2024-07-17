@@ -6,7 +6,7 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 use Workshop\Theme\Service\HelloWorld\HelloWorldPrinter;
 use Workshop\Theme\Service\HelloWorld\HelloWorldProvider;
 
-class HelloWorldPrinterTest extends UnitTestCase
+final class HelloWorldPrinterTest extends UnitTestCase
 {
     /**
      * @throws \PHPUnit\Framework\MockObject\Exception
@@ -16,7 +16,8 @@ class HelloWorldPrinterTest extends UnitTestCase
     {
         $text = "Hello Europe";
         $helloWorldProviderMock = self::createMock(HelloWorldProvider::class);
-        $helloWorldProviderMock->expects(self::once())
+        $helloWorldProviderMock
+            ->expects(self::once())
             ->method('getText')
             ->willReturn($text);
         $helloWorldPrinter = new HelloWorldPrinter($helloWorldProviderMock);
