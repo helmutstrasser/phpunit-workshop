@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /*
@@ -20,7 +21,8 @@ readonly class HelloWorldPrinter
 {
     public function __construct(
         private TextProviderInterface $helloWorldProvider
-    ) {}
+    ) {
+    }
 
     public function printHelloWorld(): string
     {

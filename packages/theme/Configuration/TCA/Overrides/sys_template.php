@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 defined('TYPO3') or die('Access denied.');
 
-call_user_func(function()
-{
+call_user_func(function (): void {
     /**
      * Temporary variables
      */
