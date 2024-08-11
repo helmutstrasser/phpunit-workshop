@@ -31,13 +31,12 @@ final class HelloWorldPrinterTest extends UnitTestCase
      * - how to mock a dependency
      * - that either the class or the interface can be mocked
      *
-     * @return void
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
     #[Test]
     public function printHelloEurope(): void
     {
-        $text = "Hello Europe";
+        $text = 'Hello Europe';
         $helloWorldProviderMock = self::createMock(TextProviderInterface::class);
         $helloWorldProviderMock
             ->expects(self::once())
