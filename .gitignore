@@ -12,3 +12,4 @@ nbproject
 !/public/typo3conf/AdditionalConfiguration.php
 /config/system/settings.php
 .phpunit.result.cache
+.php-cs-fixer.cache
