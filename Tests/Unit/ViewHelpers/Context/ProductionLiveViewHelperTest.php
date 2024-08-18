@@ -25,6 +25,14 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContext;
 use Workshop\Theme\ViewHelpers\Context\ProductionLiveViewHelper;
 
+/**
+ * ProductionLiveViewHelperTest
+ *
+ * If this test fails with the error message
+ * "TypeError : Return value of TYPO3\CMS\Core\Core\Environment::getContext() must be an instance of
+ * TYPO3\CMS\Core\Core\ApplicationContext, null returned"
+ * be sure to configure PhpStorm for PHPUnit to use the UnitTests.xml and UnitTestsBootstrap.xml configuration file.
+ */
 final class ProductionLiveViewHelperTest extends UnitTestCase
 {
     protected bool $backupEnvironment = true;
