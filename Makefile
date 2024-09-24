@@ -5,3 +5,7 @@ fix:
 .PHONY: test
 test:
 	ddev exec /var/www/html/vendor/phpunit/phpunit/phpunit --bootstrap /var/www/html/UnitTestsBootstrap.php --configuration /var/www/html/UnitTests.xml
+
+.PHONY: start
+start:
+	ddev start
