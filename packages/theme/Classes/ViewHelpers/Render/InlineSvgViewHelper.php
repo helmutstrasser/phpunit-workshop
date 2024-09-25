@@ -96,6 +96,7 @@ class InlineSvgViewHelper extends AbstractViewHelper
         try {
             return self::getInlineSvg($file, $arguments);
         } catch (\Exception $e) {
+
             if ($e->getCode() === 1614863553) {
                 return '<!-- ' . $e->getMessage() . ' -->';
             }

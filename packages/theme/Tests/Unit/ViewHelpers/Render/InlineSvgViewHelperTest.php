@@ -67,7 +67,6 @@ final class InlineSvgViewHelperTest extends UnitTestCase
     }
 
     /**
-     * @return void
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws \TYPO3\CMS\Core\Package\Exception\UnknownPackageException
      * @throws \TYPO3\CMS\Core\Package\Exception\UnknownPackagePathException
@@ -122,7 +121,6 @@ final class InlineSvgViewHelperTest extends UnitTestCase
     }
 
     /**
-     * @return void
      * @throws \PHPUnit\Framework\MockObject\Exception
      * @throws \TYPO3\CMS\Core\Package\Exception\UnknownPackageException
      * @throws \TYPO3\CMS\Core\Package\Exception\UnknownPackagePathException
@@ -144,9 +142,6 @@ final class InlineSvgViewHelperTest extends UnitTestCase
         InlineSvgViewHelper::renderStatic($arguments, $renderChildrenClosure, $renderingContext);
     }
 
-    /**
-     * @return void
-     */
     #[Test]
     public function sanitizeId(): void
     {
