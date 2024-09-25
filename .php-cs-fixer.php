@@ -7,7 +7,6 @@ use Symfony\Component\Finder\Finder;
 $finder = Finder::create()
                 ->in(__DIR__ . '/config')
                 ->in(__DIR__ . '/packages')
-                ->in(__DIR__ . '/Tests')
                 ->notName('settings.php');
 
 return (new PhpCsFixer\Config())

@@ -33,7 +33,7 @@
 >
     <testsuites>
         <testsuite name="Unit tests">
-            <directory>Tests/Unit/</directory>
+            <directory>packages/theme/Tests/Unit/</directory>
         </testsuite>
     </testsuites>
     <php>
