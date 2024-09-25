@@ -21,7 +21,10 @@
     ],
 	"require": {
 		"php": "^8.3",
-		"workshop/theme": "^1.0",
+		"ext-dom": "*",
+		"ext-libxml": "*",
+		"ext-simplexml": "*",
+		"mikey179/vfsstream": "^1.6",
 		"typo3/cms-backend": "^12.4.0",
 		"typo3/cms-belog": "^12.4.0",
 		"typo3/cms-beuser": "^12.4.0",
@@ -46,7 +49,8 @@
 		"typo3/cms-t3editor": "^12.4.0",
 		"typo3/cms-tstemplate": "^12.4.0",
 		"typo3/cms-viewpage": "^12.4.0",
-		"typo3/cms-webhooks": "^12.4.0"
+		"typo3/cms-webhooks": "^12.4.0",
+		"workshop/theme": "^1.0"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "^3.62",
