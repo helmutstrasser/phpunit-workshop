@@ -75,7 +75,14 @@ final class InlineSvgViewHelperTest extends UnitTestCase
     #[Test]
     public function renderStatic(): void
     {
-        $arguments = ['source' => $this->fileName];
+        $arguments = [
+            'source'            => $this->fileName,
+            'remove-styles'     => false,
+            'fill'              => '',
+            'uniqueId'          => 'uniqueId',
+            'custom-tags'       => '',
+            'custom-attributes' => '',
+        ];
 
         $renderChildrenClosure = fn () => null;
         $renderingContext = $this->getTypoScriptFrontendControllerMock();
