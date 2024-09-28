@@ -15,10 +15,11 @@ declare(strict_types=1);
  * The TYPO3 project - inspiring people to share!
  */
 
-namespace Workshop\Theme\Domain\Model;
+namespace Unit\Domain\Model;
 
 use PHPUnit\Framework\Attributes\Test;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
+use Workshop\Theme\Domain\Model\User;
 
 final class UserTest extends UnitTestCase
 {
