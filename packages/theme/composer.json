@@ -1,6 +1,14 @@
 {
     "name": "workshop/theme",
     "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Helmut Strasser",
+            "email": "h.strasser@supseven.at",
+            "homepage": "https://helmutstrasser.github.io/",
+            "role": "Developer"
+        }
+    ],
     "description": "Sitepackage for PHPUnit workshop TYPO3Camp Vienna 2024",
     "homepage": "https://www.typo3camp.at/",
     "license": ["GPL-2.0-or-later"],
