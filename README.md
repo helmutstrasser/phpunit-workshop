@@ -76,7 +76,7 @@ English or German):
 
 * [TYPO3 Slack](https://typo3.slack.com/team/UHQN5PJRY)
 * [Mastodon](https://mstdn.social/@helmutstrasser)
-* [Email](h.strasser@supseven.at)
+* [Email](mailto:h.strasser@supseven.at)
 
 ## License
 
