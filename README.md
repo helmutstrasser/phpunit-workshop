@@ -43,8 +43,8 @@ Please follow these steps to install the repository, respectively TYPO3, to
 your local machine:
 
 * Clone the repository to a folder your Docker provider has access to:
-  `git clone git@github.com:helmutstrasser/phpunit-workshop.git`
-* Switch into the project root: `cd phpunit-workshop`
+  `git clone git@github.com:helmutstrasser/phpunit-workshop-2024.git`
+* Switch into the project root: `cd phpunit-workshop-2024`
 * Start your Docker provider (Docker Desktop/Colima/Orbstack...)
 * Start DDEV: `ddev start`
 * Install TYPO3 and all package dependencies: `ddev composer install`
