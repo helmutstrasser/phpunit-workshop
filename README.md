@@ -25,8 +25,8 @@ Please ensure that your machine meets the following requirements:
 * DDEV
     * This repository and the installation of TYPO3 relies on the Docker-based
       PHP development environment
-      [DDEV](https://ddev.com/). Though it can also be used by configuring
-      Docker manually, it is strongly recommended to use DDEV, to
+      [DDEV](https://ddev.com/). Though the repository can also be used by
+      configuring Docker manually, it is strongly recommended to use DDEV, to
       leverage all functionality PhpStorm or Visual Code provides. During the
       workshop you will be guided through the configuration of DDEV within
       PhpStorm.
@@ -45,7 +45,7 @@ your local machine:
 * Clone the repository to a folder your Docker provider has access to:
   `git clone git@github.com:helmutstrasser/phpunit-workshop.git`
 * Switch into the project root: `cd phpunit-workshop`
-* Start your Docker provider (Docker desktop/Colima/Orbstack...)
+* Start your Docker provider (Docker Desktop/Colima/Orbstack...)
 * Start DDEV: `ddev start`
 * Install TYPO3 and all package dependencies: `ddev composer install`
 
@@ -80,4 +80,4 @@ English or German):
 
 ## License
 
-GPL-2.0 or later
+[GPL-2.0 or later](https://spdx.org/licenses/GPL-2.0-or-later.html)
