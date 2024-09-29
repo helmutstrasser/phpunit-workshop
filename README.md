@@ -17,11 +17,11 @@ Please ensure that your machine meets the following requirements:
 * A Docker provider
     * Please install one of the following Docker provider. The (free
       version) of Orbstack is recommended.
-        * [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/)
-        * [Colima](https://smallsharpsoftwaretools.com/tutorials/use-colima-to-run-docker-containers-on-macos/)
-        * [Orbstack](https://ddev.com/get-started/)
-        * A lot of other providers are
-          [listed in the DDEV Docs](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/)
+        * [Orbstack](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/#orbstack)
+        * [Docker Desktop](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/#docker-desktop-for-mac)
+        * [Colima](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/#colima)
+        * [Lima](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/#lima)
+        * [Rancher Desktop](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/#rancher-desktop)
 * DDEV
     * This repository and the installation of TYPO3 relies on the Docker-based
       PHP development environment
