@@ -125,7 +125,7 @@ final class InlineSvgViewHelperTest extends UnitTestCase
     #[Test]
     public function getFilePathWithExt(): void
     {
-        $packageManager = self::createMock(PackageManager::class);
+        $packageManager = $this->createMock(PackageManager::class);
         $packageManager->expects(self::once())
             ->method('resolvePackagePath')
             ->with('EXT:theme/Resources/Public/Images/' . $this->fileName)

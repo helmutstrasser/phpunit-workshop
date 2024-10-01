@@ -38,13 +38,13 @@ final class UserControllerTest extends UnitTestCase
     {
         $queryResult = self::createStub(QueryResultInterface::class);
 
-        $userRepository = self::createMock(UserRepository::class);
+        $userRepository = $this->createMock(UserRepository::class);
         $userRepository
             ->expects(self::once())
             ->method('findAll')
             ->willReturn($queryResult);
 
-        $defaultViewObject = self::createMock(TemplateView::class);
+        $defaultViewObject = $this->createMock(TemplateView::class);
         $defaultViewObject
             ->expects(self::once())
             ->method('assign')

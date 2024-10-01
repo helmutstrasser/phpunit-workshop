@@ -37,7 +37,7 @@ final class HelloWorldPrinterTest extends UnitTestCase
     public function printHelloEurope(): void
     {
         $text = 'Hello Europe';
-        $helloWorldProviderMock = self::createMock(TextProviderInterface::class);
+        $helloWorldProviderMock = $this->createMock(TextProviderInterface::class);
         $helloWorldProviderMock
             ->expects(self::once())
             ->method('getText')
