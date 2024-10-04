@@ -17,7 +17,6 @@ declare(strict_types=1);
 
 namespace Unit\Controller;
 
-use JetBrains\PhpStorm\NoReturn;
 use PHPUnit\Framework\Attributes\Test;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
@@ -32,7 +31,6 @@ final class UserControllerTest extends UnitTestCase
     /**
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    #[NoReturn]
     #[Test]
     public function indexActionReturnsHtmlResponse(): void
     {
@@ -73,7 +71,6 @@ final class UserControllerTest extends UnitTestCase
         self::assertInstanceOf(ResponseInterface::class, $result);
     }
 
-    #[NoReturn]
     #[Test]
     public function isActionController(): void
     {

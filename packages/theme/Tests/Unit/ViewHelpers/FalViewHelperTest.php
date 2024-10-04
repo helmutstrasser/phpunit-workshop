@@ -17,7 +17,6 @@ declare(strict_types=1);
 
 namespace Unit\ViewHelpers;
 
-use JetBrains\PhpStorm\NoReturn;
 use PHPUnit\Framework\Attributes\Test;
 use TYPO3\CMS\Core\Resource\FileRepository;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -38,7 +37,6 @@ final class FalViewHelperTest extends UnitTestCase
     /**
      * @throws \PHPUnit\Framework\MockObject\Exception
      */
-    #[NoReturn]
     #[Test]
     public function renderStatic(): void
     {
