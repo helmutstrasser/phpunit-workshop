@@ -34,6 +34,7 @@ class User extends AbstractEntity
     protected string $lastname = '';
 
     /**
+     * @Extbase\ORM\Lazy
      * @var FileReference|LazyLoadingProxy|null
      */
     protected null|FileReference|LazyLoadingProxy $avatar = null;
@@ -79,9 +80,9 @@ class User extends AbstractEntity
     }
 
     /**
-     * @return FileReference|LazyLoadingProxy|null
+     * @return FileReference|null
      */
-    public function getAvatar(): FileReference|LazyLoadingProxy|null
+    public function getAvatar(): ?FileReference
     {
         if ($this->avatar instanceof LazyLoadingProxy) {
             $this->avatar = $this->avatar->_loadRealInstance();
