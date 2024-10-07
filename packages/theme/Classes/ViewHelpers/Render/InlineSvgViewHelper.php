@@ -51,6 +51,9 @@ use Workshop\Theme\Service\Svg\CustomTags;
  * If you set an id but no title, the ViewHelper throws an exception and will not be rendered.
  *
  * It adds styles (from the svg or via argument) to the head with the asset collector to prevent CSP violations.
+ *
+ * Most simple output for an inline svg:
+ * <svg role="img" aria-hidden="true"></svg>
  */
 class InlineSvgViewHelper extends AbstractViewHelper
 {
