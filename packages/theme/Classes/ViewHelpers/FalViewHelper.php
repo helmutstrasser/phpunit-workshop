@@ -23,6 +23,20 @@ use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 
+/**
+ * FalViewHelper usage:
+ *
+ * <theme:fal table="pages" field="image" id="{row.uid}" as="references">
+ *   <f:if condition="{references}">
+ *    <f:then>
+ *      <f:media file="{references.0}" class="foobar" title="{references.0.propertiesOfFileReference.title}"/>
+ *    </f:then>
+ *    <f:else>
+ *      <img class="dummy" src="https://dummyimage.com/600x600/444/fff" alt="">
+ *    </f:else>
+ *   </f:if>
+ * </theme:fal>
+ */
 class FalViewHelper extends AbstractViewHelper
 {
     use CompileWithRenderStatic;
