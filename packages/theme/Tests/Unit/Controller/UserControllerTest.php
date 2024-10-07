@@ -21,8 +21,8 @@ use PHPUnit\Framework\Attributes\Test;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
-use TYPO3\CMS\Fluid\View\TemplateView;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
+use TYPO3Fluid\Fluid\View\ViewInterface;
 use Workshop\Theme\Controller\UserController;
 use Workshop\Theme\Domain\Repository\UserRepository;
 
@@ -42,41 +42,41 @@ final class UserControllerTest extends UnitTestCase
             ->method('findAll')
             ->willReturn($queryResult);
 
-        $defaultViewObject = $this->createMock(TemplateView::class);
-        $defaultViewObject
+        $view = $this->createMock(ViewInterface::class);
+        $view
             ->expects(self::once())
             ->method('assign')
-            ->with('users', $queryResult);
+            ->with(
+                'users',
+                $queryResult
+            )
+            ->willReturnSelf();
 
-        $response = self::createStub(ResponseInterface::class);
+        $responseInterface = self::createStub(ResponseInterface::class);
 
         $sut = self::getAccessibleMock(
             UserController::class,
             [
-                'htmlResponse',
+              'htmlResponse',
             ],
             [
-               $userRepository,
-            ]
+                $userRepository,
+            ],
         );
-        $sut->_set('view', $defaultViewObject);
+
+        $sut->_set('view', $view);
 
         $sut
             ->expects(self::once())
             ->method('htmlResponse')
-            ->willReturn($response);
+            ->willReturn($responseInterface);
 
-        $result = $sut->indexAction();
-
-        self::assertInstanceOf(ResponseInterface::class, $result);
+        self::assertInstanceOf(ResponseInterface::class, $sut->indexAction());
     }
 
     #[Test]
     public function isActionController(): void
     {
-        $this->assertInstanceOf(
-            ActionController::class,
-            new UserController(new UserRepository())
-        );
+        $this->assertInstanceOf(ActionController::class, new UserController(new UserRepository()));
     }
 }
