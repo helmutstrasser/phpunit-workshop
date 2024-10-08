@@ -25,4 +25,18 @@ use Workshop\Theme\Domain\Model\User;
  */
 class UserRepository extends Repository
 {
+    /**
+     * Find the user that is marked as organiser
+     *
+     * @return \Workshop\Theme\Domain\Model\User
+     */
+    public function findOrganiser(): User
+    {
+        $query = $this->createQuery();
+        $query->matching(
+            $query->equals('isOrganiser', true)
+        );
+
+        return $query->execute()->getFirst();
+    }
 }
