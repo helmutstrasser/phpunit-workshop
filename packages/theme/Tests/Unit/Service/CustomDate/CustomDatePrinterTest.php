@@ -44,8 +44,9 @@ final class CustomDatePrinterTest extends UnitTestCase
 
         // Act
         $result = $subject->printDate($format);
+        $expected = $expectedDate->format($format);
 
         // Assert
-        self::assertEquals($expectedDate->format($format), $result);
+        self::assertEquals($expected, $result);
     }
 }
