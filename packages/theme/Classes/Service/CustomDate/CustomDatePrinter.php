@@ -15,17 +15,24 @@ declare(strict_types=1);
  * The TYPO3 project - inspiring people to share!
  */
 
-namespace Workshop\Theme\Service\HelloWorld;
+namespace Workshop\Theme\Service\CustomDate;
 
-readonly class HelloWorldPrinter
+readonly class CustomDatePrinter
 {
     public function __construct(
-        private TextProviderInterface $helloWorldProvider
+        private DateProviderInterface $dateProvider
     ) {
     }
 
-    public function printHelloWorld(): string
+    /**
+     * @param string $format
+     *
+     * @return string
+     */
+    public function printDate(string $format): string
     {
-        return $this->helloWorldProvider->getText();
+        $date = $this->dateProvider->getDate();
+
+        return $date->format($format);
     }
 }

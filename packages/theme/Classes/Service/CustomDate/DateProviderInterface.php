@@ -15,9 +15,17 @@ declare(strict_types=1);
  * The TYPO3 project - inspiring people to share!
  */
 
-namespace Workshop\Theme\Service\HelloWorld;
+namespace Workshop\Theme\Service\CustomDate;
 
-interface TextProviderInterface
+interface DateProviderInterface
 {
-    public function getText(): string;
+    /**
+     * @param \DateTimeImmutable $date
+     */
+    public function setDate(\DateTimeImmutable $date): void;
+
+    /**
+     * @return \DateTimeImmutable
+     */
+    public function getDate(): \DateTimeImmutable;
 }
